@@ -1,1 +1,1 @@
-if v<299 then if a>v x=10 else x = 20
+if x<>10 then y=19 else z

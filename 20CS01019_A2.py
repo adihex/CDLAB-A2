@@ -1,4 +1,3 @@
-import sys
 import re
 
 numberRegex = re.compile(r"^[0-9]+(\.[0-9]+)?(E[+-]?[0-9]+)?$")
@@ -40,13 +39,13 @@ def buildArray(inputString):
     return outputArray
 
 def readInputFromFile(filename):
-    # with open(filename, "r", encoding="utf8") as file:
-        # return file.read()
-        for line in sys.stdin:
-            line=line.rstrip()
+    with open(filename, "r", encoding="utf8") as file:
+        return file.read()
+        # for line in sys.stdin:
+            # line=line.rstrip()
             # print(f"Message from stdin:{line}")
             # break
-            return line
+            # return line
 
 def writeOutputToFile(filename, output):
     with open(filename, "w", encoding="utf8") as file:
