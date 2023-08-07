@@ -1,4 +1,8 @@
 # CDLAB-A2
+```
+ Name: Aditya Balakrishnan 
+ Roll no: 20CS01019
+```
 
 ### Implementing a lexical analyser:
 
