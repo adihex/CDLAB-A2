@@ -1,1 +1,1 @@
-if v<>299 then if a>v x=10 else x = 20
+if v<299 then if a>v x=10 else x = 20
