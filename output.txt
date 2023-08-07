@@ -1,0 +1,5 @@
+(id,ifa)
+(relop,=)
+(number,19)
+(then,THEN)
+(number,10)
