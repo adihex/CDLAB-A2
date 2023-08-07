@@ -33,8 +33,7 @@ def buildArray(inputString):
     i=0
     for char in inputString:
         if char in (" ", "\n", "\t", "<", ">", "="):
-            if tempString.strip():
-                outputArray.append(tempString.strip())
+            outputArray.append(tempString.strip())
             if char in ("<", ">", "=") and inputString[i + 1] == char:
                 outputArray.append(char + inputString[i + 1])
                 i += 1
@@ -62,7 +61,7 @@ def main():
     inputString = readInputFromFile(inputFilePath)
     testCases = buildArray(inputString)
     categorizedTestCases = categorizeTestCases(testCases)
-
+    print(categorizedTestCases)
     writeOutputToFile(outputFilePath, categorizedTestCases)
 
 if __name__ == "__main__":
